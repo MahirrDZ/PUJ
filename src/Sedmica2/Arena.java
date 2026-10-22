@@ -28,7 +28,7 @@ import java.util.function.Supplier;
 public class Arena {
 
     // =====================================================================
-    //  ZONA ZA STUDENTE  -  ovdje radite (TODO 1 - TODO 9, pa BONUS 1 i 2)
+    //  ZONA ZA STUDENTEE  -  ovdje radite (TODO 1 - TODO 9, pa BONUS 1 i 2)
     // =====================================================================
 
     // TODO 1 - Da li je lik živ?
