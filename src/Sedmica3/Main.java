@@ -8,11 +8,14 @@ import java.util.ArrayList;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
+
         ArrayList<Employee> employees = new ArrayList<>();
 
         try(BufferedReader br = new BufferedReader(new FileReader("employees.txt"))) {
+
             String line;
             while((line = br.readLine()) != null){
+
                 String[] parts= line.split(",");
                 String type=parts[0];
                 String name=parts[1];
@@ -25,10 +28,9 @@ public class Main {
                     double bonus=Double.parseDouble(parts[4]);
                     employees.add(new Manager(name,id,salary,bonus));
                 }
-
             }
-        } catch (IOException e) {
-            System.out.println(e.getMessage());
+        }catch (IOException e) {
+            System.out.println("Greska u čitanju file-a"+e.getMessage());
         }
 
         for(Employee e:employees){
