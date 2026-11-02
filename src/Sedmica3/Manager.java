@@ -11,6 +11,10 @@ public class Manager extends Employee {
         super(name, id, salary);
         this.bonus = bonus;
     }
+    @Override
+    public void work(){
+        System.out.println(getName() + " is managing the team");
+    }
     public double getSalary(){
         return super.getSalary() + bonus;
     }

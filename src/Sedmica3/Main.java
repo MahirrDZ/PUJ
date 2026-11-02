@@ -32,8 +32,8 @@ public class Main {
         }
 
         for(Employee e:employees){
-            e.work();
             System.out.println(e.getDetails());
+            e.work();
         }
 
     }

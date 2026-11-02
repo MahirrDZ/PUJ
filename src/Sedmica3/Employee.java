@@ -27,6 +27,6 @@ public class Employee {
         System.out.println("Employee " + name + " is working.");
     }
     public String getDetails(){
-        return "Employee " + name + " has id " + id + " and salary " + salary;
+        return "ID: " + id + ", Name: " + name + ", Salary: " + salary;
     }
 }
