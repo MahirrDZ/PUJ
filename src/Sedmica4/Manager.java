@@ -1,8 +1,4 @@
-package Sedmica3;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.util.ArrayList;
+package Sedmica4;
 
 public class Manager extends Employee {
     private double bonus;
