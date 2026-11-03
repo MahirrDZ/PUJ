@@ -7,10 +7,20 @@ import java.util.ArrayList;
 public class Manager extends Employee {
     private double bonus;
 
-    public Manager(String name, int id, double salary, double bonus) {
-        super(name, id, salary);
+    public Manager(String position,String name, int id, double salary, double bonus) {
+        super(position,name, id, salary);
         this.bonus = bonus;
     }
+
+    public double getBonus(){
+        return bonus;
+    }
+
+    public double getSalaryWithoutBonus(){
+        return super.getSalary();
+    }
+
+    @Override
     public double getSalary(){
         return super.getSalary() + bonus;
     }
@@ -22,6 +32,7 @@ public class Manager extends Employee {
 
     @Override
     public String getDetails(){
-        return super.getDetails() + " and has bonus " + bonus;
+        return super.getDetails() + " and has bonus " + bonus + " for a total of " + getSalary();
     }
+
 }
