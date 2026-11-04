@@ -1,10 +1,11 @@
 package Sedmica4;
 
-public class Employee {
+public class Employee implements Comparable<Employee>, Cloneable{
     private String position;
     private String name;
     private int id;
     private double salary;
+
 
     public Employee(String position,String name, int id, double salary) {
         this.position = position;
@@ -37,4 +38,16 @@ public class Employee {
         return "Position: "+ position +" ID: " + id + ", Name: " + name + ", Salary: " + salary;
     }
 
+    @Override
+    public int compareTo(Employee other) {
+        return Double.compare(other.getSalary(), this.getSalary());
+    }
+    @Override
+    public Employee clone() {
+        try {
+            return (Employee) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new AssertionError(e);
+        }
+    }
 }
