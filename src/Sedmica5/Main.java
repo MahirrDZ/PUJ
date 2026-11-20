@@ -14,7 +14,7 @@ public class Main {
 
         ArrayList<Employee> employees = new ArrayList<>();
 
-        try (BufferedReader br = new BufferedReader(new FileReader("employees.txt"))) {
+        try (BufferedReader br = new BufferedReader(new FileReader("src/Sedmica5/employees.txt"))) {
 
             String line;
 
@@ -64,7 +64,7 @@ public class Main {
         System.out.println("Top employee by salary ");
         System.out.println(employeesSorted.getFirst().getDetails());
         System.out.println("---------------------------------------------------------");
-        writeToFile(employeesSorted,"employeesSorted.txt");
+        writeToFile(employeesSorted,"src/Sedmica5/employeesSorted.txt");
         System.out.println("Employee list saved in employeesSorted.txt");
         System.out.println("---------------------------------------------------------");
         System.out.println("Cloning example: ");
