@@ -1,4 +1,4 @@
-package Sedmica4i5.LMS;
+package Sedmica4;
 
 public class LibraryItem {
     private String title;

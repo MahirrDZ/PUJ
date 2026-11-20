@@ -1,4 +1,4 @@
-package Sedmica4i5;
+package Sedmica5;
 
 public class Employee implements Comparable<Employee>, Cloneable{
     private String position;

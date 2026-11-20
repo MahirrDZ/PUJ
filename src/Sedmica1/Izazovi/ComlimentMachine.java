@@ -1,4 +1,4 @@
-package Izazovi;
+package Sedmica1.Izazovi;
 
 public class ComlimentMachine {
     public static void main(String[] args) {

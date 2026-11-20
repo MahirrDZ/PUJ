@@ -1,4 +1,4 @@
-package DogMangmentSystem;
+package Sedmica3.DogMangmentSystem;
 import java.util.ArrayList;
 import java.util.Scanner;
 

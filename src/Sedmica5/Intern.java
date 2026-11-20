@@ -1,6 +1,6 @@
-package Sedmica4i5;
+package Sedmica5;
 
-public class Intern extends Employee{
+public class Intern extends Employee {
     private String school;
     private String mentorName;
     private int durationInMonths;

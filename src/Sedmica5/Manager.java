@@ -1,4 +1,4 @@
-package Sedmica4i5;
+package Sedmica5;
 
 import java.time.LocalDate;
 import java.time.Period;
