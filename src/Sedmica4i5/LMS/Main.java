@@ -1,8 +1,4 @@
-package Sedmica4.LMS;
-
-import Sedmica4.Employee;
-import Sedmica4.Intern;
-import Sedmica4.Manager;
+package Sedmica4i5.LMS;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

@@ -1,4 +1,4 @@
-package Sedmica4.LMS;
+package Sedmica4i5.LMS;
 
 public class DVD extends LibraryItem{
     private String director;

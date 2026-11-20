@@ -1,4 +1,4 @@
-package Sedmica4;
+package Sedmica4i5;
 
 public class Intern extends Employee{
     private String school;

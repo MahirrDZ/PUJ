@@ -1,4 +1,4 @@
-package Sedmica4;
+package Sedmica4i5;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
