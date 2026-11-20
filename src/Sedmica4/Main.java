@@ -11,7 +11,7 @@ public class Main {
     public static void main(String[] args)  {
         ArrayList<LibraryItem> libraryItems = new ArrayList<>();
 
-        try(BufferedReader br = new BufferedReader(new FileReader("src/Sedmica4/LMS/LibraryItems.txt"))) {
+        try(BufferedReader br = new BufferedReader(new FileReader("src/Sedmica4/LibraryItems.txt"))) {
             String line;
 
             while((line = br.readLine()) != null) {
@@ -126,7 +126,7 @@ public class Main {
     }
 
     public static void saveToFile(ArrayList<LibraryItem> libraryItems) {
-        final String fileName = "src/Sedmica4/LMS/LibraryItems.txt";
+        final String fileName = "src/Sedmica4/LibraryItems.txt";
         try (FileWriter fw = new FileWriter(fileName)) {
             for (LibraryItem i : libraryItems) {
                 switch(i.getClass().getSimpleName()){
